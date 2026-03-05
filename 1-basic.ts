@@ -43,7 +43,7 @@ function limpiarPodio(podio: number[]): number[] {
 // --- SUITE DE TESTS CON NODE:ASSERT ---
 
 function correrTests() {
-  console.log("Iniciando tests con node:assert...");
+  console.log("\nIniciando tests con node:assert...");
 
   try {
     // Test 1: Caso Base
@@ -77,7 +77,7 @@ function correrTests() {
       obtenerTop3Precios([-1]);
     }, /Precio fuera de rango/);
 
-    console.log("✅ ¡Todos los tests de node:assert pasaron con éxito!");
+    console.log("\n✅ ¡Todos los tests de node:assert pasaron con éxito!");
   } catch (error) {
     console.error("❌ Fallo en los tests:");
     console.error(error);

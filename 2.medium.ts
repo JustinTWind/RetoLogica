@@ -69,7 +69,7 @@ function calcularFactura(
 }
 
 function imprimirFactura(factura: Factura): void { 
-  console.log(`SUBTOTAL ${factura.subtotal}`);
+  console.log(`\nSUBTOTAL ${factura.subtotal}`);
   console.log(`DESCUENTO ${factura.descuento}`);
   console.log(`IVA ${factura.iva}`);
   console.log(`TOTAL ${factura.total}`);
@@ -80,7 +80,7 @@ function imprimirFactura(factura: Factura): void {
 // --- SUITE DE TESTS CON NODE:ASSERT ---
 
 function correrTests() {
-  console.log("Iniciando tests de lógica de factura...");
+  console.log("\n Iniciando tests de lógica de factura...");
 
   try {
     // Test 1: Caso DESC10
@@ -108,7 +108,7 @@ function correrTests() {
     const f5 = calcularFactura([102.7], "NONE", 0);
     assert.strictEqual(f5.iva, 20);
 
-    console.log("✅ ¡Todos los tests de la factura pasaron!");
+    console.log("\n✅ ¡Todos los tests de la factura pasaron!");
   } catch (error) {
     console.error("❌ Fallo en los tests:");
     console.error(error);
