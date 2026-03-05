@@ -46,13 +46,13 @@ function correrTests() {
   console.log("Iniciando tests con node:assert...");
 
   try {
-    // Test: Caso Base
+    // Test 1: Caso Base
     assert.deepStrictEqual(
       obtenerTop3Precios([10, 50, 20, 100, 80]),
       [100, 80, 50],
     );
 
-    // Test: Menos de 3 elementos
+    // Test 2: Menos de 3 elementos
     assert.deepStrictEqual(obtenerTop3Precios([5, 15]), [15, 5]);
 
     // Test: Elementos repetidos (Empates)
@@ -61,10 +61,10 @@ function correrTests() {
       [100, 100, 50],
     );
 
-    // Test: Valores en el límite inferior
+    // Test 3: Valores en el límite inferior
     assert.deepStrictEqual(obtenerTop3Precios([0, 0, 0]), [0, 0, 0]);
 
-    // Test: Error de Arreglo Vacío
+    // Test 4: Error de Arreglo Vacío
     assert.throws(
       () => {
         obtenerTop3Precios([]);
@@ -72,7 +72,7 @@ function correrTests() {
       { message: "El arreglo debe tener entre 1 y 100,000 elementos." },
     );
 
-    // Test: Error de Rango de Precio
+    // Test 5: Error de Rango de Precio
     assert.throws(() => {
       obtenerTop3Precios([-1]);
     }, /Precio fuera de rango/);
