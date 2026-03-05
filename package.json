@@ -1,0 +1,24 @@
+{
+  "name": "retologica",
+  "version": "1.0.0",
+  "description": "Diagnosticar el nivel actual de los estudiantes en pensamiento algorítmico y bases de programación, verificando que puedan:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinTWind/RetoLogica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JustinTWind/RetoLogica/issues"
+  },
+  "homepage": "https://github.com/JustinTWind/RetoLogica#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.3"
+  }
+}
